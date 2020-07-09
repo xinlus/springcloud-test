@@ -1,0 +1,14 @@
+/target/
+/logs/
+.project
+.classpath
+.settings
+*.class
+/src/test
+.mvn
+/.mvn/
+/build
+.idea
+*.iws
+*.iml
+*.ipr

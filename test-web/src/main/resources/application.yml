@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: test-web
+feign:
+  hystrix:
+    enabled: true
+eureka:
+  client:
+    server-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    # 每隔5秒向注册中心发送心跳
+    lease-renewal-interval-in-seconds: 5
+    # 连续10秒没有向服务端发送心跳，让注册中心踢掉自己
+    lease-expiration-duration-in-seconds: 10
